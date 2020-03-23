@@ -200,7 +200,7 @@
         responsive:{
             0:{
                 margin: 0,
-                items:2
+                items:1
             },
             600:{
                 items:3
