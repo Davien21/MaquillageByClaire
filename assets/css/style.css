@@ -195,8 +195,8 @@ input[type="checkbox"] {
 
 /* ======= Helpfull Classes ======= */
 .container-fluid-2 {
-    padding-right: 60px;
-    padding-left: 60px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 .o-hidden {
     overflow: hidden;
@@ -2392,7 +2392,10 @@ section#events-section  div.content-box{
 
 }
 @media screen and (min-width:768px) {
-
+    .container-fluid-2 {
+        padding-right: 60px;
+        padding-left: 60px;
+    }
 
 }
 @media screen and (min-width:992px) {
