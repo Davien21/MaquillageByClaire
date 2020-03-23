@@ -1564,6 +1564,10 @@ body.offcanvas .claire-nav-toggle {
 .testimonial-box {
     box-shadow: 1px 1.5px 1px 1px #E1E1E1;
 }
+section.testimonials .container-fluid-2 {
+    padding-right: 60px;
+    padding-left: 60px;
+}
 .testimonials .section-head {
     text-align: left;
     margin-bottom: 0;
@@ -2396,6 +2400,7 @@ section#events-section  div.content-box{
         padding-right: 60px;
         padding-left: 60px;
     }
+  
 
 }
 @media screen and (min-width:992px) {
