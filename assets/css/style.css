@@ -1796,14 +1796,9 @@ section#events-section form#quick-appointment-form input:focus{
 .samples img {
     -webkit-filter: none;
     filter: none;
-    height: 250px;
+    height: 270px;
 }
-.samples img:hover {
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-    -webkit-transition: all .5s;
-    transition: all .5s;
-}
+
 
 a.dev-ad {
     font-size: 18px;
@@ -2400,7 +2395,17 @@ section#events-section  div.content-box{
         padding-right: 60px;
         padding-left: 60px;
     }
-  
+    .samples img {
+        -webkit-filter: none;
+        filter: none;
+        height: 250px;
+    }
+    .samples img:hover {
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        -webkit-transition: all .5s;
+        transition: all .5s;
+    }
 
 }
 @media screen and (min-width:992px) {
