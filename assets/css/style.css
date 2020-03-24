@@ -1562,8 +1562,8 @@ body.offcanvas .claire-nav-toggle {
     box-shadow: 1px 1.5px 1px 1px #E1E1E1;
 }
 section.testimonials .container-fluid-2 {
-    padding-right: 60px;
-    padding-left: 60px;
+    padding-right: 30px;
+    padding-left: 30px;
 }
 .testimonials .section-head {
     text-align: left;
@@ -1588,7 +1588,8 @@ section.testimonials .container-fluid-2 {
     border-radius: 10px;
     margin-bottom: 15px;
     position: relative;
-    height: 236px;
+    min-height: 236px;
+    max-height: 236px;
 }
 .testimonials .item-box .quote {
     position: absolute;
