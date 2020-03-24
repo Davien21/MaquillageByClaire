@@ -367,6 +367,7 @@ input[type="checkbox"] {
 .claire-makeup,
 .claire-blog,
 .claire-post,
+.claire-what-we-do,
 .claire-contact {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -374,7 +375,7 @@ input[type="checkbox"] {
     width: 100%;
     display: block;
 }
-.claire-testimonial {
+.claire-testimonial .claire-what-we-do,{
     padding-top: 90px;
     padding-bottom: 90px;
     clear: both;
@@ -390,7 +391,7 @@ input[type="checkbox"] {
 @media screen and (max-width: 768px) {
     .claire-home-services,
     .claire-home-blog,
-    .claire-testimonial,
+    .claire-testimonial,.claire-what-we-do,
     .claire-samples,
     .claire-about,
     .claire-team,
@@ -431,7 +432,6 @@ input[type="checkbox"] {
     transition: 0.5s;
     -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
-    background: #e52e71;
     background-image: -webkit-gradient(linear, right bottom, left top, from(#e52e71), to(#ff8a00));
     background-image: linear-gradient(to bottom, #e52e71, #ff8a00);
 }
@@ -1575,7 +1575,7 @@ section.testimonials .container-fluid-2 {
 .testimonials .section-head p {
     color: #666;
 }
-.testimonials .section-head h4 {
+.testimonials .section-head h4,.testimonials .section-head h2 {
     padding-bottom: 0;
     color: #e52e71;
     font-size: 30px;
@@ -1608,7 +1608,7 @@ section.testimonials .container-fluid-2 {
     text-align: left;
     margin: 30px 0 15px 0;
 }
-.testimonials .item-box .info .author-img {
+.testimonials .item-box .author-img {
     width: 45px;
     height: 45px;
     border-radius: 50%;
@@ -1796,7 +1796,7 @@ section#events-section form#quick-appointment-form input:focus{
 .samples img {
     -webkit-filter: none;
     filter: none;
-    height: 320px;
+    height: 400px;
 }
 
 
@@ -2398,7 +2398,7 @@ section#events-section  div.content-box{
     .samples img {
         -webkit-filter: none;
         filter: none;
-        height: 250px;
+        height: 280px;
     }
     .samples img:hover {
         -webkit-filter: grayscale(100%);

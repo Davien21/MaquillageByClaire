@@ -1,5 +1,26 @@
 (function () {
     'use strict';
+    /* ====== Helpful and Reusable functions ====== */
+    function addEffectonEvent (effectClass,event,identity,classToRemove='') {
+        let but = $('.contact-text');
+        if (classToRemove !== '') {
+            $(identity).removeClass(classToRemove)
+        }
+        $(identity).on(event, function(e){
+            e.stopPropagation();
+            $(identity).addClass(effectClass)
+        })
+    }
+    function removeEffectonEvent (effectClass,event,identity,classToAdd='') {
+        let but = $('.contact-text');
+        $(identity).on(event, function(){
+            $(identity).removeClass(effectClass)
+        })
+        if (classToAdd !== '') {
+            $(identity).addClass(classToAdd)
+        }
+    }
+    /* ====== Specific functions ====== */
     var isMobile = {
         Android: function () {
             return navigator.userAgent.match(/Android/i);
@@ -189,6 +210,27 @@
             }
         }
     });
+    $('.events .owl-carousel').owlCarousel({
+        loop:true,
+        margin: 30,
+        mouseDrag:true,
+        autoplay:true,
+        dots: false,
+        nav: true,
+        navText: ["<span class='lnr ti-angle-left'></span>","<span class='lnr ti-angle-right'></span>"],
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+            },
+            600:{
+                items:2
+            },
+            1000:{
+                items:2
+            }
+        }
+    });
     // samples owlCarousel
     $('.samples .owl-carousel').owlCarousel({
         loop:true,
@@ -241,8 +283,12 @@
     $('.collapse').on('hidden.bs.collapse', function () {
         $(this).parent().removeClass('active');
     });
-
 });
+    /* ======= Declaratives =======*/
+    $('section.claire-testimonial .item-box').addClass('testimonial-box');
+    let currentDate = new Date();
+    $('.currentYear').text(currentDate.getFullYear());
+    /* ======= Extras =======*/
     // img zoom
      $(".img-zoom").magnificPopup({
     type: "image"
@@ -254,8 +300,6 @@
         , preload: [0, 1]
     }
 })
-    
-        
     var buttons = document.querySelectorAll(".btn .btn-contact .claire-contact-info");
     for(var i = 0; i < buttons.length; i++) {
       var button = buttons[i];
@@ -266,6 +310,4 @@
           button.classList.remove("active");
       });
     }
-
-    $('section.claire-testimonial .item-box').addClass('testimonial-box')
 }());
