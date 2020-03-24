@@ -194,10 +194,7 @@ input[type="checkbox"] {
 }
 
 /* ======= Helpfull Classes ======= */
-.container-fluid-2 {
-    padding-right: 15px;
-    padding-left: 15px;
-}
+
 .o-hidden {
     overflow: hidden;
 }
@@ -2378,6 +2375,10 @@ ol.comment-list li .children li {
     text-decoration: none;
     outline: none;
     color: #fff;
+}
+.container-fluid-2 {
+    padding-right: 15px;
+    padding-left: 15px;
 }
 section#events-section  div.content-box{
     padding: 50px 30px;
