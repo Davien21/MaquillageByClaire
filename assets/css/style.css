@@ -1591,6 +1591,7 @@ section.testimonials .container-fluid-2 {
     border-radius: 10px;
     margin-bottom: 15px;
     position: relative;
+    height: 236px;
 }
 .testimonials .item-box .quote {
     position: absolute;
