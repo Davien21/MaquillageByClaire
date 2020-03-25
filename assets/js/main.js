@@ -6,11 +6,12 @@
         if (classToRemove !== '') {
             $(identity).removeClass(classToRemove)
         }
-        $(identity).on(event, function(e){
-            e.stopPropagation();
+        $(identity).on(event, function(){
             $(identity).addClass(effectClass)
         })
     }
+    addEffectonEvent('tada','mouseenter','.instagram-link');
+    removeEffectonEvent('tada','mouseleave','.instagram-link');
     function removeEffectonEvent (effectClass,event,identity,classToAdd='') {
         let but = $('.contact-text');
         $(identity).on(event, function(){
