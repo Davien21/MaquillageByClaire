@@ -287,8 +287,7 @@
 });
     /* ======= Declaratives =======*/
     $('section.claire-testimonial .item-box').addClass('testimonial-box');
-    let currentDate = new Date();
-    $('.currentYear').text(currentDate.getFullYear());
+   
     /* ======= Extras =======*/
     // img zoom
      $(".img-zoom").magnificPopup({

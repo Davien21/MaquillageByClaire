@@ -29,6 +29,7 @@
 
 /* ======= Default style  ======= */
 * {
+    /*color: #fff !important;*/
     margin:0px;
     padding:0px;
     border:none;
@@ -380,6 +381,12 @@ input[type="checkbox"] {
     width: 100%;
     display: block;
     background-position: center;
+}
+#claire-contact-section input, #claire-contact-section textarea {
+    border: 1px solid #fff;
+}
+#claire-contact-section .claire-heading.text-shadow {
+    text-shadow: 2px 2px 4px #fff;
 }
 .claire-makeup,
 .claire-team,
@@ -1613,6 +1620,13 @@ section.testimonials .container-fluid-2 {
     border-radius: 50%;
     float: left;
     overflow: hidden;
+}
+.small-svgs {
+    width: 30px;
+    height: 30px;
+    /*border-radius: 50%;*/
+    /*float: left;*/
+    /*overflow: hidden;*/
 }
 .testimonials .item-box .info .cont {
     margin-left: 60px;
