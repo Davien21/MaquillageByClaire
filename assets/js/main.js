@@ -1,4 +1,7 @@
-(function () {
+$(document).ready(function() {
+    $(function($) {
+        $("img.lazy").Lazy();
+    });
     'use strict';
     /* ====== Helpful and Reusable functions ====== */
     function addEffectonEvent (effectClass,event,identity,classToRemove='') {
@@ -278,28 +281,28 @@
     });
      // Accordion
     $(document).ready(function() {
-    $('.collapse').on('shown.bs.collapse', function () {
-        $(this).parent().addClass('active');
+        $('.collapse').on('shown.bs.collapse', function () {
+            $(this).parent().addClass('active');
+        });
+        $('.collapse').on('hidden.bs.collapse', function () {
+            $(this).parent().removeClass('active');
+        });
     });
-    $('.collapse').on('hidden.bs.collapse', function () {
-        $(this).parent().removeClass('active');
-    });
-});
     /* ======= Declaratives =======*/
     $('section.claire-testimonial .item-box').addClass('testimonial-box');
    
     /* ======= Extras =======*/
     // img zoom
      $(".img-zoom").magnificPopup({
-    type: "image"
-    , closeOnContentClick: !0
-    , mainClass: "mfp-fade"
-    , gallery: {
-        enabled: !0
-        , navigateByImgClick: !0
-        , preload: [0, 1]
-    }
-})
+        type: "image"
+        , closeOnContentClick: !0
+        , mainClass: "mfp-fade"
+        , gallery: {
+            enabled: !0
+            , navigateByImgClick: !0
+            , preload: [0, 1]
+        }
+    })
     var buttons = document.querySelectorAll(".btn .btn-contact .claire-contact-info");
     for(var i = 0; i < buttons.length; i++) {
       var button = buttons[i];
@@ -310,4 +313,4 @@
           button.classList.remove("active");
       });
     }
-}());
+});

@@ -29,7 +29,6 @@
 
 /* ======= Default style  ======= */
 * {
-    /*color: #fff !important;*/
     margin:0px;
     padding:0px;
     border:none;
@@ -578,8 +577,8 @@ input[type="checkbox"] {
     display: block;
     position: absolute;
     content: "";
-    width: 8px;
-    height: 8px;
+    width: 12px;
+    height: 12px;
     right: 8px;
     z-index: 10;
     -webkit-transform: rotate(-135deg);
@@ -2454,7 +2453,6 @@ section#events-section  div.content-box{
     .claire-testimonial {
         background-position-y: center;
         background-position-x: 100px;
-        background-image: 
     }
 
 }   
