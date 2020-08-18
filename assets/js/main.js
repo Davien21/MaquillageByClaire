@@ -1,7 +1,7 @@
 $(document).ready(function() {
-    $(function($) {
-        $("img.lazy").Lazy();
-    });
+    // $(function($) {
+    //     $("img.lazy").Lazy();
+    // });
     'use strict';
     /* ====== Helpful and Reusable functions ====== */
     function addEffectonEvent (effectClass,event,identity,classToRemove='') {
